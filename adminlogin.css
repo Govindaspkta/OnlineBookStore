@@ -1,0 +1,49 @@
+body{
+    
+    
+    background-size: cover;
+  background-color: aqua;
+  display: flex;
+  
+}
+.container {
+    border: 2px solid balck;
+    background-color: antiquewhite;
+    margin-left: 35%;
+    margin-top:15%;
+    padding: 30px;
+    height: 280px;
+    width: 350px
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 11px;
+    margin-left: 3.5px;
+ 
+}
+
+.button {
+
+    margin-left: 40%;
+    padding-top: 2%;
+    text-decoration: none;
+}
+.submit{
+    background-color: rgb(0, 0, 0);
+    font-size: medium;
+    color:white;
+}
+.login {
+    text-align: center;
+
+}
+/* a {
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+  } */
+/* .reg{
+    text-align: center;
+} */

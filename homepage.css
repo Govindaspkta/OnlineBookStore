@@ -1,0 +1,42 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images-container img {
+    width: 200px; /* Set a fixed width for all images */
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the aspect ratio of images is maintained */
+    margin: 10px; /* Space between images */
+}
+
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-bar input[type="text"],
+.search-bar button {
+    margin: 0 5px;
+}
+
+.search-bar button {
+    background: url("search_button_bg.jpg") no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}

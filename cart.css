@@ -1,0 +1,90 @@
+/* Base styles */
+:root {
+    --border: 2px solid #ccc;
+    --black: #000;
+    --orange: #ff8800;
+    --white: #fff;
+    --antiquewhite: #faebd7;
+}
+
+/* Table Styles */
+.shopping-cart table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-cart table thead th {
+    padding: 10px;
+    font-size: 30px;
+    color: var(--black);
+    background-color: var(--antiquewhite);
+}
+
+.shopping-cart table tr td {
+    border-bottom: var(--border);
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+/* Form and Input Styles */
+.shopping-cart table input[type="number"] {
+    border: var(--border);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: var(--black);
+    width: 10rem;
+}
+
+.shopping-cart table input[type="submit"] {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shopping-cart table input[type="submit"]:hover {
+    background-color: var(--black);
+}
+
+/* Checkout Button */
+.shopping-cart .checkout-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.shopping-cart .checkout-btn a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shopping-cart .checkout-btn a:hover {
+    background-color: var(--black);
+}
+
+.shopping-cart .checkout-btn a.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Link Styles */
+.option-btn, .delete-btn {
+    text-decoration: none;
+    color: var(--black);
+    transition: color 0.3s ease;
+}
+
+.option-btn:hover, .delete-btn:hover {
+    color: var(--orange);
+}

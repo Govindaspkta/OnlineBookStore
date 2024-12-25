@@ -1,0 +1,25 @@
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+body {
+    background-color: rgb(218, 218, 218);
+}
+
+.box {
+    font-size: 20px;
+    border-radius: 8px; 
+    color: #000; 
+    background-color: antiquewhite;
+    text-align: center;
+}
+.adminhome{
+    text-align:center;
+ 
+}

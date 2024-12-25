@@ -1,0 +1,88 @@
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 160px; /* 10rem equivalent to 160px */
+}
+
+section {
+    padding: 32px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 32px;
+}
+
+.btn,
+.option-btn,
+.delete-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue); /* Assuming --blue is defined elsewhere */
+    color: var(--white); /* Assuming --white is defined elsewhere */
+    font-size: 18px; /* Reduce font size for buttons */
+    padding: 12px 24px; /* Reduce padding for buttons */
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust margin top for buttons */
+    background-color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid size */
+    gap: 3px !important; /* Ensure that the gap property takes precedence */
+}
+
+.products .box-container .box {
+    text-align: center;
+    padding: 10px; /* Adjust padding for each box */
+    margin: 0; /* Reset margin */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 350px;
+}
+
+.products .box-container .box img {
+    max-width: 100%;
+    max-height: 150px; /* Adjust max-height for images */
+    margin-bottom: 8px; /* Adjust margin bottom for images */
+}
+
+.products .box-container .box h3 {
+    margin: 6px 0; /* Adjust margin for title */
+    font-size: 16px; /* Reduce font size for title */
+    color: black;
+}
+
+.products .box-container .box h3,
+.products .box-container .box .price,
+.products .box-container .box p {
+    margin: 4px 0;
+    font-size: 14px; /* Reduce font size for other text */
+    color: black;
+}
+
+.products .box-container .box {
+    text-align: center;
+    padding: 10px; /* Adjust padding for each box */
+    margin: 0; /* Reset margin */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 350px;
+}

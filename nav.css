@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header and Navigation */
+.header {
+  color: rgb(0, 0, 0);
+}
+
+.top {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: antiquewhite;
+  border-radius: 0 0 20px 20px;
+  padding: 0 20px; /* Added padding for spacing */
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation li {
+  margin: 0 16px;
+  color: rgb(255, 255, 255);
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.5s;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: antiquewhite;
+  width: 180px;
+  border-radius: 2px;
+  padding: 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: background-color 0.5s;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navigation a:hover,
+.dropdown-content a:hover {
+  background-color: aqua;
+}
+
+.category-btn {
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: none;
+  transition: background-color 0.5s;
+}
+
+/* Search input field styling */
+.search-input {
+    width: 300px; /* Increased size */
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Cart and logout button styling to reduce the gap */
+.cart-item {
+    display: inline-block;
+    margin-right: 5px; /* Reduced margin for closer spacing */
+}
+
+.btn-outline-success {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    color: #28a745;
+    transition: background-color 0.3s;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navigation li {
+      margin: 8px 0;
+  }
+
+  .login {
+      display: none;
+      margin-right: 20px;
+      color: black;
+  }
+
+  .login a:hover {
+      background-color: aqua;
+  }
+
+  .admin {
+      color: black;
+      display: none;
+      margin-right: -5px;
+  }
+}
+
+/* Photos section adjustment */
+.photos {
+  margin-top: 120px;
+  display: flex;
+}

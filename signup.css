@@ -1,0 +1,55 @@
+
+body{
+    background-color: aqua;
+    background-size: cover;
+
+}
+
+.container{
+    border: 2px solid balck;
+    background-color: antiquewhite;
+    margin-left: 35%;
+    margin-top:5%;
+    padding: 30px;
+    height: 600px;
+    width: 350px
+}
+
+input {
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    margin: 11px;
+    margin-left: 3.5px;
+    
+
+}
+
+.button {
+
+    margin-left: 40%;
+    padding-top: 2%;
+    text-decoration: none;
+}
+.submit{
+    background-color: rgb(0, 0, 0);
+    font-size: medium;
+    color:white;
+}
+.beamember {
+    text-align: center;
+
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+   
+  }
+  .privacypolicy{
+    text-align: center;
+  }
+  .login{
+    text-align: center;
+  }
